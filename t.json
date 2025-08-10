@@ -1,0 +1,193 @@
+{
+    "text.exe_": {
+        "static_strings": [
+            {
+                "offset": 77,
+                "string": "!This program cannot be run in DOS mode.",
+                "tags": [
+                    "#ascii"
+                ]
+            },
+            {
+                "offset": 487,
+                "string": "`.rdata",
+                "tags": [
+                    "#ascii",
+                    "#capa"
+                ]
+            },
+            {
+                "offset": 527,
+                "string": "@.reloc",
+                "tags": [
+                    "#ascii"
+                ]
+            },
+            {
+                "offset": 8250,
+                "string": "DsRoleGetPrimaryDomainInformation",
+                "tags": [
+                    "#ascii"
+                ]
+            },
+            {
+                "offset": 8284,
+                "string": "NETAPI32.dll",
+                "tags": [
+                    "#ascii"
+                ]
+            },
+            {
+                "offset": 8300,
+                "string": "GetProcAddress",
+                "tags": [
+                    "#ascii"
+                ]
+            },
+            {
+                "offset": 8316,
+                "string": "LoadLibraryA",
+                "tags": [
+                    "#ascii"
+                ]
+            },
+            {
+                "offset": 8330,
+                "string": "KERNEL32.dll",
+                "tags": [
+                    "#ascii"
+                ]
+            },
+            {
+                "offset": 8350,
+                "string": "VirtualAlloc",
+                "tags": [
+                    "#ascii"
+                ]
+            },
+            {
+                "offset": 8370,
+                "string": "VirtualFree",
+                "tags": [
+                    "#ascii"
+                ]
+            },
+            {
+                "offset": 8390,
+                "string": ".text",
+                "tags": [
+                    "#ascii"
+                ]
+            },
+            {
+                "offset": 8400,
+                "string": ".data",
+                "tags": [
+                    "#ascii"
+                ]
+            }
+        ],
+        "context": {
+            "pe": {
+                "header": [
+                    {
+                        "offsets": [
+                            [
+                                77,
+                                117
+                            ]
+                        ],
+                        "structure": null,
+                        "tags": []
+                    },
+                    {
+                        "offsets": [
+                            [
+                                487,
+                                494
+                            ],
+                            [
+                                527,
+                                534
+                            ]
+                        ],
+                        "structure": "section header",
+                        "tags": []
+                    },
+                    {
+                        "offsets": [
+                            [
+                                8390,
+                                8395
+                            ],
+                            [
+                                8400,
+                                8405
+                            ]
+                        ],
+                        "structure": "section header",
+                        "tags": []
+                    }
+                ],
+                ".rdata": [
+                    {
+                        "offsets": [
+                            [
+                                8250,
+                                8283
+                            ],
+                            [
+                                8284,
+                                8296
+                            ],
+                            [
+                                8300,
+                                8314
+                            ],
+                            [
+                                8316,
+                                8327
+                            ],
+                            [
+                                8330,
+                                8343
+                            ]
+                        ],
+                        "structure": "import table",
+                        "tags": [
+                            "#winapi"
+                        ]
+                    }
+                ],
+                ".text": [
+                    {
+                        "offsets": [
+                            [
+                                8350,
+                                8361
+                            ],
+                            [
+                                8370,
+                                8381
+                            ]
+                        ],
+                        "structure": "import table",
+                        "tags": [
+                            "#winapi"
+                        ]
+                    }
+                ]
+            }
+        },
+        "categories":{
+            "common": [
+                "#ascii",
+                "#winapi"
+            ],
+            "database": [
+                "#capa"
+            ]
+
+        }
+    }
+}
